@@ -1,0 +1,42 @@
+$size: 2vw;
+$n: 101;
+
+html, body {
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.move {
+  @for $i from 1 to $n {
+    $duration: 1s + 40ms * $i;
+    &:nth-child(#{$i}) {
+      animation: move-animation-#{$i};
+      animation-duration: $duration;
+      animation-direction: alternate; 
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      background-color: hsla(255/110 * $i, 90, 50, 1);
+    }
+  }
+}
+
+@for $i from 1 to $n {
+  @keyframes move-animation-#{$i} {
+    from {
+      left: 50vw;
+      top: 50vh;
+    }
+    to {
+      left: random($limit: 100) + vw;
+      top: random($limit: 100) + vh;
+    }
+  }
+}

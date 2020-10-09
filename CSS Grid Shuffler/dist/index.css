@@ -1,0 +1,324 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+main > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  transition: 0.25s all linear;
+  transform: translateX(0);
+  background: red;
+}
+main div:nth-child(1) {
+  background-color: #f2160d;
+}
+main div:nth-child(2) {
+  background-color: #f21e0d;
+}
+main div:nth-child(3) {
+  background-color: #f2270d;
+}
+main div:nth-child(4) {
+  background-color: #f2300d;
+}
+main div:nth-child(5) {
+  background-color: #f2390d;
+}
+main div:nth-child(6) {
+  background-color: #f2420d;
+}
+main div:nth-child(7) {
+  background-color: #f24b0d;
+}
+main div:nth-child(8) {
+  background-color: #f2540d;
+}
+main div:nth-child(9) {
+  background-color: #f25d0d;
+}
+main div:nth-child(10) {
+  background-color: #f2650d;
+}
+main div:nth-child(11) {
+  background-color: #f26e0d;
+}
+main div:nth-child(12) {
+  background-color: #f2770d;
+}
+main div:nth-child(13) {
+  background-color: #f2800d;
+}
+main div:nth-child(14) {
+  background-color: #f2890d;
+}
+main div:nth-child(15) {
+  background-color: #f2920d;
+}
+main div:nth-child(16) {
+  background-color: #f29b0d;
+}
+main div:nth-child(17) {
+  background-color: #f2a30d;
+}
+main div:nth-child(18) {
+  background-color: #f2ac0d;
+}
+main div:nth-child(19) {
+  background-color: #f2b50d;
+}
+main div:nth-child(20) {
+  background-color: #f2be0d;
+}
+main div:nth-child(21) {
+  background-color: #f2c70d;
+}
+main div:nth-child(22) {
+  background-color: #f2d00d;
+}
+main div:nth-child(23) {
+  background-color: #f2d90d;
+}
+main div:nth-child(24) {
+  background-color: #f2e20d;
+}
+main div:nth-child(25) {
+  background-color: #f2ea0d;
+}
+main div:nth-child(26) {
+  background-color: #f1f20d;
+}
+main div:nth-child(27) {
+  background-color: #e8f20d;
+}
+main div:nth-child(28) {
+  background-color: #dff20d;
+}
+main div:nth-child(29) {
+  background-color: #d7f20d;
+}
+main div:nth-child(30) {
+  background-color: #cef20d;
+}
+main div:nth-child(31) {
+  background-color: #c5f20d;
+}
+main div:nth-child(32) {
+  background-color: #bcf20d;
+}
+main div:nth-child(33) {
+  background-color: #b3f20d;
+}
+main div:nth-child(34) {
+  background-color: #aaf20d;
+}
+main div:nth-child(35) {
+  background-color: #a1f20d;
+}
+main div:nth-child(36) {
+  background-color: #99f20d;
+}
+main div:nth-child(37) {
+  background-color: #90f20d;
+}
+main div:nth-child(38) {
+  background-color: #87f20d;
+}
+main div:nth-child(39) {
+  background-color: #7ef20d;
+}
+main div:nth-child(40) {
+  background-color: #75f20d;
+}
+main div:nth-child(41) {
+  background-color: #6cf20d;
+}
+main div:nth-child(42) {
+  background-color: #63f20d;
+}
+main div:nth-child(43) {
+  background-color: #5af20d;
+}
+main div:nth-child(44) {
+  background-color: #52f20d;
+}
+main div:nth-child(45) {
+  background-color: #49f20d;
+}
+main div:nth-child(46) {
+  background-color: #40f20d;
+}
+main div:nth-child(47) {
+  background-color: #37f20d;
+}
+main div:nth-child(48) {
+  background-color: #2ef20d;
+}
+main div:nth-child(49) {
+  background-color: #25f20d;
+}
+main div:nth-child(50) {
+  background-color: #1cf20d;
+}
+main div:nth-child(51) {
+  background-color: #14f20d;
+}
+main div:nth-child(52) {
+  background-color: #0df20f;
+}
+main div:nth-child(53) {
+  background-color: #0df218;
+}
+main div:nth-child(54) {
+  background-color: #0df221;
+}
+main div:nth-child(55) {
+  background-color: #0df229;
+}
+main div:nth-child(56) {
+  background-color: #0df232;
+}
+main div:nth-child(57) {
+  background-color: #0df23b;
+}
+main div:nth-child(58) {
+  background-color: #0df244;
+}
+main div:nth-child(59) {
+  background-color: #0df24d;
+}
+main div:nth-child(60) {
+  background-color: #0df256;
+}
+main div:nth-child(61) {
+  background-color: #0df25f;
+}
+main div:nth-child(62) {
+  background-color: #0df268;
+}
+main div:nth-child(63) {
+  background-color: #0df270;
+}
+main div:nth-child(64) {
+  background-color: #0df279;
+}
+main div:nth-child(65) {
+  background-color: #0df282;
+}
+main div:nth-child(66) {
+  background-color: #0df28b;
+}
+main div:nth-child(67) {
+  background-color: #0df294;
+}
+main div:nth-child(68) {
+  background-color: #0df29d;
+}
+main div:nth-child(69) {
+  background-color: #0df2a6;
+}
+main div:nth-child(70) {
+  background-color: #0df2ae;
+}
+main div:nth-child(71) {
+  background-color: #0df2b7;
+}
+main div:nth-child(72) {
+  background-color: #0df2c0;
+}
+main div:nth-child(73) {
+  background-color: #0df2c9;
+}
+main div:nth-child(74) {
+  background-color: #0df2d2;
+}
+main div:nth-child(75) {
+  background-color: #0df2db;
+}
+main div:nth-child(76) {
+  background-color: #0df2e4;
+}
+main div:nth-child(77) {
+  background-color: #0df2ed;
+}
+main div:nth-child(78) {
+  background-color: #0deff2;
+}
+main div:nth-child(79) {
+  background-color: #0de6f2;
+}
+main div:nth-child(80) {
+  background-color: #0dddf2;
+}
+main div:nth-child(81) {
+  background-color: #0dd5f2;
+}
+main div:nth-child(82) {
+  background-color: #0dccf2;
+}
+main div:nth-child(83) {
+  background-color: #0dc3f2;
+}
+main div:nth-child(84) {
+  background-color: #0dbaf2;
+}
+main div:nth-child(85) {
+  background-color: #0db1f2;
+}
+main div:nth-child(86) {
+  background-color: #0da8f2;
+}
+main div:nth-child(87) {
+  background-color: #0d9ff2;
+}
+main div:nth-child(88) {
+  background-color: #0d96f2;
+}
+main div:nth-child(89) {
+  background-color: #0d8ef2;
+}
+main div:nth-child(90) {
+  background-color: #0d85f2;
+}
+main div:nth-child(91) {
+  background-color: #0d7cf2;
+}
+main div:nth-child(92) {
+  background-color: #0d73f2;
+}
+main div:nth-child(93) {
+  background-color: #0d6af2;
+}
+main div:nth-child(94) {
+  background-color: #0d61f2;
+}
+main div:nth-child(95) {
+  background-color: #0d58f2;
+}
+main div:nth-child(96) {
+  background-color: #0d50f2;
+}
+main div:nth-child(97) {
+  background-color: #0d47f2;
+}
+main div:nth-child(98) {
+  background-color: #0d3ef2;
+}
+main div:nth-child(99) {
+  background-color: #0d35f2;
+}
+main div:nth-child(100) {
+  background-color: #0d2cf2;
+}

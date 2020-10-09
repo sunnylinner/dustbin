@@ -1,0 +1,122 @@
+:root {
+  background-image: linear-gradient(to top, #050005, #08022f);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 1vmin;
+}
+
+body {
+  --skew-angle: 45deg;
+  --color-top: #999;
+  --color-left: #eee;
+  --color-right: #777;
+  --color-outline: #999;
+  --wave-x: 4rem;
+  --wave-y: 4rem;
+
+  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  transform: scaleY(0.5) rotate(var(--skew-angle));
+}
+
+div {
+  --size: 6rem;
+  --iteration: 0;
+
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color-top);
+  outline: .25rem solid var(--color-outline);
+
+  animation: wooo 1s ease-in-out infinite alternate, back 3s ease-in-out infinite alternate;
+
+  @for $i from 0 through 9 {
+    @for $j from 0 through 9 {
+      $index: $j * 10 + $i;
+      $distance: ($i + $j) / 2 - 5;
+
+      &:nth-child(#{ $index + 1 }) {
+        --distance: #{ $distance };
+
+        // $color: hsl(100 + ($i - $j) * 10, 255, 36 + $distance * 10);
+        // --color-top: #{ $color };
+        // --color-left: #{ lighten($color, 10%) };
+        // --color-right: #{ lighten($color, 20%) };
+        // --color-outline: #{ $color };
+
+        // background-image: url('./微信图片.jpg');
+        $x: percentage(($i) / 10);
+        $y: percentage(($j) / 10);
+        background-position: $x $y;
+        
+        
+        animation-delay: #{ $distance * 100 }ms;
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    outline: inherit;
+  }
+
+  &::before {
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    height: var(--size);
+    background: var(--color-left);
+    transform: skew(var(--skew-angle));
+  }
+
+  &::after {
+    top: 50%;
+    left: 100%;
+    height: 100%;
+    width: var(--size);
+    background: var(--color-right);
+    transform: skew(0, var(--skew-angle));
+  }
+}
+
+@keyframes wooo {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(
+      calc(var(--distance) * var(--wave-x)),
+      calc(var(--distance) * var(--wave-y))
+    );
+    opacity: 0.96;
+  }
+}
+
+@keyframes back {
+  0% {
+    opacity: 1;
+    background-image: url('./ff.jpg');
+  }
+  33% {
+    opacity: 1;
+    background-image: url('./zn.jpg');
+  }
+  66% {
+    opacity: 1;
+    background-image: url('./hj.jpg');
+  }
+  100% {
+    opacity: 1;
+    background-image: url('./ff.jpg');
+  }
+}
